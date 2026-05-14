@@ -1,49 +1,211 @@
- # AI-Powered Physiotherapy & Medical Report Assistant
+# 🧍 AI-Powered Physiotherapy & Medical Report Assistant
 
-An intelligent healthcare assistant that combines computer vision, natural language processing, and conversational AI to provide: Real-time posture analysis & physiotherapy guidance
-Medical report summarization using OCR + NLP
-Interactive chatbot powered by GPT4All for health queries and daily reminders
-This project aims to make physiotherapy, medical interpretation, and health tracking accessible to patients anywhere, without requiring constant doctor supervision.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![AI](https://img.shields.io/badge/AI-Healthcare-orange)
+![Computer Vision](https://img.shields.io/badge/ComputerVision-OpenCV-green)
 
-# Features
-🔹 Posture Analysis
--Detects posture using MediaPipe/OpenPose keypoint extraction
--Supports sitting posture, squats, push-ups, and extensible to yoga & mobility routines
--Provides real-time correction feedback (visual/audio cues)
--Tracks reps, errors, and progress over time
+An intelligent healthcare assistant that combines AI, Computer Vision, OCR, NLP, and conversational AI to help users with posture analysis, physiotherapy guidance, and medical report understanding.
 
-🔹 Medical Report Understanding
--Upload reports in PDF, JPG, PNG, or DICOM
--OCR extracts text from scans and documents
--NLP pipeline (SBERT + FAISS) converts medical jargon into patient-friendly summaries
--Dashboard with report storage and downloadable summaries
+This project aims to make physiotherapy and health tracking more accessible without requiring constant doctor supervision.
 
-🔹 Conversational Chatbot (GPT4All)
--Hybrid RAG pipeline:
--High similarity queries → Report-specific answers
--Low similarity queries → GPT4All fallback for physiotherapy/health guidance
--Explains medical reports, suggests exercises, and answers health queries
--Includes daily reminders (hydration, sleep, exercise schedule)
+---
 
-🔹 Lifestyle & Reminders
--Calendar-based schedule for exercises & follow-ups
--Custom reminders for water intake, sleep routine, fitness goals
--Progress dashboard for tracking improvements
+# 📌 Project Overview
 
-# System Architecture
-Frontend: Flutter / React.js
-Minimalist, accessible UI with 5-tab navigation (Exercise, Camera, Consultation, Upload, Schedule)
-Sidebar profile dashboard with patient details
+This system combines multiple AI technologies into one healthcare assistant platform.
 
-Posture Model:
-MediaPipe/OpenPose for skeleton extraction
-Angle calculation + ML classifier for error detection
-TensorFlow Lite optimization for mobile
-OCR + NLP:
-Tesseract OCR for text extraction
-SBERT embeddings + FAISS vector DB for semantic search
-Summarization using transformer-based models
-Chatbot Engine:
-Retrieval-Augmented Generation (RAG)
-GPT4All as fallback LLM for general health queries
-Context-aware conversation with report + posture data
+The project includes:
+
+- Real-time posture analysis
+- Exercise & physiotherapy guidance
+- Medical report summarization
+- OCR-based text extraction
+- AI-powered healthcare chatbot
+- Health reminders & progress tracking
+
+The system is designed for patients, fitness users, and physiotherapy assistance.
+
+---
+
+# 🚀 Features
+
+## 🔹 Posture Analysis
+✅ Real-time posture detection  
+✅ Body alignment tracking  
+✅ Squat & sitting posture analysis  
+✅ Exercise correction feedback  
+✅ Rep and progress tracking  
+
+---
+
+## 🔹 Medical Report Understanding
+✅ Upload PDF, JPG, PNG reports  
+✅ OCR-based text extraction  
+✅ AI-generated patient-friendly summaries  
+✅ Medical jargon simplification  
+✅ Report storage & tracking  
+
+---
+
+## 🔹 AI Chatbot
+✅ Conversational healthcare assistant  
+✅ GPT4All integration  
+✅ Physiotherapy & exercise guidance  
+✅ Report-based query answering  
+✅ Daily reminders & suggestions  
+
+---
+
+## 🔹 Lifestyle & Health Tracking
+✅ Exercise schedules  
+✅ Water & sleep reminders  
+✅ Fitness progress tracking  
+✅ Follow-up reminders  
+
+---
+
+# 📂 Project Structure
+
+```bash
+POSTURE-ANALYSIS-SYSTEM/
+│
+├── CHATBOT.ipynb
+├── IMAGE TO TEXT.ipynb
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# 🧠 Technologies Used
+
+## AI & Machine Learning
+- Python
+- TensorFlow
+- Scikit-learn
+- GPT4All
+
+## Computer Vision
+- OpenCV
+- MediaPipe
+- OpenPose
+
+## OCR & NLP
+- Tesseract OCR
+- SBERT
+- FAISS
+- Transformer Models
+
+## Frontend
+- Flutter / React.js
+
+---
+
+# ⚙️ System Architecture
+
+## Frontend
+Minimal and accessible healthcare dashboard with:
+- Exercise Tracking
+- Camera Analysis
+- Consultation
+- Report Upload
+- Schedule & Reminders
+
+---
+
+## Posture Analysis Model
+- Skeleton extraction using MediaPipe/OpenPose
+- Angle calculation for posture correction
+- ML-based error detection
+- Real-time feedback system
+
+---
+
+## OCR + NLP Pipeline
+- OCR extracts text from medical reports
+- NLP summarizes complex medical information
+- Semantic search using SBERT + FAISS
+
+---
+
+## Chatbot Engine
+- Retrieval-Augmented Generation (RAG)
+- GPT4All fallback model
+- Context-aware medical assistance
+
+---
+
+# 📈 Applications
+
+- Physiotherapy Assistance
+- Fitness & Exercise Monitoring
+- Remote Health Monitoring
+- Rehabilitation Support
+- Medical Report Simplification
+- AI Healthcare Assistance
+
+---
+
+# 🔒 Future Improvements
+
+- Real-time webcam posture correction
+- Mobile app integration
+- Voice assistant support
+- Multi-language medical report analysis
+- Cloud-based patient dashboard
+- AI-generated physiotherapy plans
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/POSTURE-ANALYSIS-SYSTEM.git
+```
+
+Move into the project directory:
+
+```bash
+cd POSTURE-ANALYSIS-SYSTEM
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Fork the repository and create a pull request.
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+Developed as an AI-powered healthcare and physiotherapy assistance project using Computer Vision, NLP, and Machine Learning.
+
+---
+
+# ⭐ Support
+
+If you found this project useful, give it a ⭐ on GitHub.
